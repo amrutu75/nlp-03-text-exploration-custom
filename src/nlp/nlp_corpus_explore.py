@@ -202,11 +202,11 @@ for category in token_df["category"].unique().to_list():
 # Co-occurrence examines which tokens appear near each other.
 
 # Define how many tokens on each side of a target token we include as context.
-# A window size of 2 means:
-#   - up to 2 tokens before the target token
-#   - up to 2 tokens after the target token
+# A window size of 3 means:
+#   - up to 3 tokens before the target token
+#   - up to 3 tokens after the target token
 # The target token itself is not included in its context list.
-WINDOW_SIZE: int = 2
+WINDOW_SIZE: int = 3
 
 # Define a new empty dictionary to store the co-occurrence information.
 # The keys will be target tokens,
